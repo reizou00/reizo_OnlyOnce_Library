@@ -2,7 +2,7 @@
 # 一回だけ実行する用のスコアを作成
 $scoreboard objectives add reizo_onlyonce.$(obj) dummy
 
-# 1から2じゃなかったら数字変えます。
+# 1じゃなかったら数字変えます。
 $execute \
 unless score @s reizo_onlyonce.$(obj) matches 1 run \
 scoreboard players set @s reizo_onlyonce.$(obj) 0
